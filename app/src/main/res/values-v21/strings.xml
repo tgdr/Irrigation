@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">i花酱</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_login">登录i花匠系统</string>
+
+    <string name="set_value">阈值:</string>
+    <string name="pm25_title">PM2.5</string>
+    <string name="CO2_title">C02</string>
+    <string name="light_title">光照度</string>
+    <string name="air_title">Air temperature and humidity</string>
+    <string name="soil_title">土壤湿度</string>
+    <string name="air_tmper_title">温度</string>
+    <string name="air_humid_title">湿度</string>
+    <string name="soil_tmper_title">Soil Temperature</string>
+    <string name="soil_humid_title">土壤湿度</string>
+    <!-- Strings related to login -->
+    <string name="prompt_phone">请输入手机号码</string>
+    <string name="prompt_username">请输入用户名</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">用户名输入不正确</string>
+    <string name="error_invalid_password">密码太短了</string>
+    <string name="error_incorrect_password">密码输入错误</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="app_version">V2.0</string></resources>

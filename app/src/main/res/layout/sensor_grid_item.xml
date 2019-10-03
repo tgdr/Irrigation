@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/sensor_item_layout"
+    >
+   <RelativeLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="28sp"
+           android:text="N/A"
+           android:id="@+id/sensor_name_text1"
+           />
+       <ImageView
+            android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:id="@+id/status_image"
+           android:src="@drawable/nomal"
+           android:layout_alignParentRight="true"
+           />
+   </RelativeLayout>
+   <RelativeLayout 
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       >
+             <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/set_value_text" android:textSize="15sp"
+           android:text="@string/set_value"
+           
+           />
+       <TextView 
+            android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:textSize="15sp"
+           android:layout_toRightOf="@id/set_value_text"
+           
+           />
+        <TextView 
+            android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:id="@+id/sensor_value_text"
+           android:textSize="38sp"
+           android:textColor="#fff"
+           android:gravity="center_vertical|center_horizontal"
+           android:background="@drawable/sensor_value_bg"
+           android:layout_alignParentRight="true"
+           />
+   </RelativeLayout>
+</LinearLayout>

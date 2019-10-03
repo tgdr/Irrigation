@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_realtimedata"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_flower"
+        app:showAsAction="ifRoom"
+        android:title="实时数据" />
+    <item
+        android:id="@+id/menu_history"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_history"
+        app:showAsAction="ifRoom"
+        android:title="监控" />
+
+    <item
+        android:id="@+id/menu_usercenter"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_icon_myhome"
+        android:title="我" />
+
+</menu>

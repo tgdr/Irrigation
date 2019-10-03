@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="5dp">
+
+    <android.support.v7.widget.CardView
+
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="#FFF8F8"
+        app:contentPadding="15dp"
+        android:paddingTop="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        android:stateListAnimator="@drawable/z_translation"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/tv_card_num"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff000000"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="1/10" />
+
+                <TextView
+                    android:id="@+id/tv_card_score"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:text="N/A" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#CDC0B8"
+                android:layout_width="match_parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/card_img"
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/splash" />
+
+
+                <com.haozhang.lib.SlantedTextView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:gravity="center"
+                    android:id="@+id/tv_card_name"
+                    app:slantedBackgroundColor="@color/secondary_text"
+                    app:slantedLength="40dp"
+                    android:layout_gravity="right"
+                    app:slantedMode="right"
+                    app:slantedText="IOS"
+                    app:slantedTextColor="@color/primary"
+                    app:slantedTextSize="16sp"
+                    />
+                <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:orientation="horizontal"-->
+                    <!--                        android:layout_marginTop="3dp">-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/tv_card_course_time"-->
+                    <!--                            android:layout_marginTop="3dp"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:text="08:00-9:30"-->
+                    <!--                            android:layout_marginLeft="10dp"-->
+
+                    <!--                            android:textSize="15dp" />-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/tv_card_course_position"-->
+                    <!--                            android:textSize="15dp"-->
+                    <!--                            android:gravity="bottom"-->
+                    <!--                            android:layout_marginLeft="15dp"-->
+                    <!--                            android:layout_gravity="bottom"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:text="综合实训楼7A-7005" />-->
+
+                    <!--                    </LinearLayout>-->
+
+                </FrameLayout>
+            <lty.buu.irrigation.defui.SpannableFoldTextView
+                android:id="@+id/tv_card_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:textColor="#000"
+                app:showMaxLine="4"
+                app:showTipAfterExpand="true"
+                app:tipClickable="true"
+                app:tipColor="@color/colorPrimary"
+                app:tipGravity="1"
+                />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

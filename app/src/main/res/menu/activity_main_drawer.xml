@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_showdata"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="数据查看" />
+
+        <item
+            android:id="@+id/nav_showirr"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="灌溉状况" />
+        <item
+            android:id="@+id/nav_autoctrl"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="自动控制" />
+        <item
+            android:id="@+id/nav_irrknowledge"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="灌溉知识" />
+    </group>
+
+    <item android:title="VIP功能">
+        <menu>
+            <item
+                android:id="@+id/nav_history"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="历史数据" />
+            <item
+                android:id="@+id/nav_explain"
+                android:icon="@drawable/ic_menu_share"
+                android:title="软件说明" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_send"
+                android:title="退出" />
+        </menu>
+    </item>
+    <item android:title="软件版本"><menu>
+        <item android:title="V1.1"/>
+
+        </menu></item>
+
+</menu>

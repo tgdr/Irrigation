@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/tvid"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:text="NULL"
+        android:textSize="35dp"
+
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <TextView
+
+        android:id="@+id/tvmsg"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="NULLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"
+        android:textColor="#ff00ab00"
+        android:textSize="28dp" />
+
+</LinearLayout>

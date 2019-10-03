@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr">
+        <item>普通用户</item>
+        <item>会员用户</item>
+        <item>超级会员用户</item>
+        <item>管理员用户</item>
+    </string-array>
+    <string-array name="carId">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="msgTYPE">
+        <item>全部</item>
+        <item>PM2.5报警</item>
+        <item>路况报警</item>
+        <item>光照强度报警</item>
+    </string-array>
+    <string-array name="paixu">
+        <item>路口升序</item>
+        <item>路口降序</item>
+        <item>红灯升序</item>
+        <item>红灯降序</item>
+    </string-array>
+    <string-array name="partType">
+        <item>全部</item>
+        <item>停车</item>
+        <item>ETC</item>
+    </string-array>
+
+</resources>
