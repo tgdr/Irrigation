@@ -18,13 +18,14 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
-        android:alpha="0.5"
+        android:alpha="1"
         android:layout_gravity="bottom|center"
         android:gravity="bottom"
         android:src="@drawable/ic_icon_capture" />
     <ImageView
-        android:alpha="1"
+        android:alpha="0.8"
+        android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bg_frame"/>
+        android:src="@drawable/frame_photo"/>
 </FrameLayout>

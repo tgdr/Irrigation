@@ -15,11 +15,16 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.io.IOException;
 
+import lty.buu.irrigation.IrrigationApplication;
 import lty.buu.irrigation.R;
+import lty.buu.irrigation.http.BaseRequest;
+import lty.buu.irrigation.http.request.SetPumpRequest;
+
 public class PumpFragment extends Fragment {
     private final static String ON = "1";
     private final static String OFF = "0";
@@ -40,6 +45,7 @@ public class PumpFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        isWater=false;
     }
 
     @Override
@@ -68,6 +74,16 @@ public class PumpFragment extends Fragment {
                             ivWater.setImageResource(R.drawable.ic_water_on);
                             ivWater.clearAnimation();
                             ivWater.setClickable(true);
+
+                            SetPumpRequest request=new SetPumpRequest((IrrigationApplication) getActivity().getApplication());
+                            request.setKaiguan(true);
+                            request.setOnBackRequestLinstener(new BaseRequest.onBackRequestLinstener() {
+                                @Override
+                                public void onRequestLinstener() {
+                                    Toast.makeText(getContext(),"开启网络访问成功",Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                             ((IrrigationApplication) getActivity().getApplication()).requestOneThread(request);
 
                         }
 
@@ -98,6 +114,16 @@ public class PumpFragment extends Fragment {
                             ivWater.clearAnimation();
                             ivWater.setClickable(true);
 
+
+                            SetPumpRequest request=new SetPumpRequest((IrrigationApplication) getActivity().getApplication());
+                            request.setKaiguan(false);
+                            request.setOnBackRequestLinstener(new BaseRequest.onBackRequestLinstener() {
+                                @Override
+                                public void onRequestLinstener() {
+                                    Toast.makeText(getContext(),"开启网络访问成功",Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                            ((IrrigationApplication) getActivity().getApplication()).requestOneThread(request);
 
                         }
 

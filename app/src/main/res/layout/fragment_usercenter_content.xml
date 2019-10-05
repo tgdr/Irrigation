@@ -82,7 +82,7 @@
         android:layout_height="50dp"
         app:left_icon="@drawable/ic_icon_manualctrl"
         app:left_text="手动控制"
-        app:right_text="当前状态：关" />
+        app:right_text="点击进行操作" />
 
     <lty.buu.irrigation.defui.ItemView
         android:id="@+id/signName"
@@ -90,7 +90,7 @@
         android:layout_height="50dp"
         app:left_icon="@drawable/ic_icon_autoctrl"
         app:left_text="自动控制"
-        app:right_text="关" />
+        app:right_text="点击进行操作" />
 
     <lty.buu.irrigation.defui.ItemView
         android:id="@+id/pass"

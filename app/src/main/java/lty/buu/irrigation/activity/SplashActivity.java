@@ -14,19 +14,35 @@ import lty.buu.irrigation.R;
 
 public class SplashActivity extends Activity {
     private Handler handler = new Handler();
+    String []permissions = {Manifest.permission.CAMERA};
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        if(ContextCompat.checkSelfPermission(SplashActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(SplashActivity.this, new String[]{Manifest.permission.CAMERA}, 0x0016);
+        if(ContextCompat.checkSelfPermission(SplashActivity.this,permissions[0]) != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(SplashActivity.this, permissions, 0x0016);
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    gotoLogin();
+                }
+            }, 6000);
         }
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                gotoLogin();
-            }
-        }, 2500);
+
+
+
+            else{
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    gotoLogin();
+                }
+            }, 2000);
+
+        }
+
+
+
 
     }
 

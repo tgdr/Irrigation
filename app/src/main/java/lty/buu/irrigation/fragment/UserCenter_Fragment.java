@@ -120,7 +120,7 @@ public class UserCenter_Fragment extends Fragment {
         mSex.setItemClickListener(new ItemView.itemClickListener() {
             @Override
             public void itemClick(String text) {
-
+                getFragmentManager().beginTransaction().replace(R.id.mycontent,new PumpFragment()).commit();
             }
         });
         mclassinfo.setItemClickListener(new ItemView.itemClickListener() {
@@ -199,7 +199,9 @@ public class UserCenter_Fragment extends Fragment {
         mPass.setItemClickListener(new ItemView.itemClickListener() {
             @Override
             public void itemClick(String text) {
-                Toast.makeText(getActivity(), "即将推出", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "即将推出", Toast.LENGTH_SHORT).show();
+                getFragmentManager().beginTransaction().replace(R.id.mycontent,new frag_irr_knowledge()).commit();
+
             }
         });
     }
